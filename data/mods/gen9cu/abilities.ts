@@ -121,7 +121,7 @@ export const Abilities: {[abilityid: string]: AbilityData} = {
 				pokemon.addVolatile('torment');
 			},
 			onBasePowerPriority: 8,
-			onBasePower(this, relayVar, source, target, move) {
+			onBasePower(basePower, attacker, defender, move) {
 				return this.chainModify(1.5);
 			},
 		},
